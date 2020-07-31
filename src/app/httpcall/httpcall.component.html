@@ -1,0 +1,22 @@
+<p>
+  <button (click)="GetData()">Get Data</button>
+  <button (click)="ClearData()">Clear Data</button>
+</p>
+
+
+
+
+<!--<div *ngFor="let item of users;index as i; trackBy: trackByFn">
+  {{item.id}}
+  {{item.address.street}}
+  
+
+  </div>-->
+  <table>
+    <tr *ngFor="let item of users;index as i;"> 
+      <td>{{item.id}}</td>
+      <td>{{item.address.street}}<td>
+      </tr>
+  </table>
+ 
+  <pre>{{ users | json }}</pre>

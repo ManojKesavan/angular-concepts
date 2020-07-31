@@ -1,0 +1,17 @@
+<p>
+await-promise: Two HTTP call with delay of 2 seconds each and orchestration on UI
+</p>
+<!--<a href="javascript:void(0);" (click)="onRefresh()">Refresh</a>-->
+
+
+<div *ngIf="!data_1?.length > 0">
+        <div class="loader"></div>
+    </div>
+    <div *ngIf="data_1?.length > 0">
+       
+            {{data_1 | json}}
+       
+    </div>
+<!--<div  style="">{{data_1 | json}}</div>
+<div style="border:1px solid red;">{{data_2}}</div>
+<div>{{data_3 | json}}</div>-->

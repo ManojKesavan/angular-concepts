@@ -1,0 +1,27 @@
+<!--<pre>{{ skillSet | json  }}</pre>-->
+<br/><br/>
+Binding<br/>
+ <input type="text" placeholder="Celcius" [(ngModel)]="Celcius" (keyup)="CelciusChange($event)"/>&nbsp;
+  <input type="text" placeholder="Farenheit" [(ngModel)]="Farenheit" (keyup)="FarenheitChange($event)"/><br/><br/><br/>
+
+  Add to  object <br/>
+  <input type="text" placeholder="name" [(ngModel)]="hotel" />&nbsp;
+  <input type="text" placeholder="city" [(ngModel)]="city" />
+  <br/>  <br/>
+  <button type="button" (click)="Submit($event)">Submit to Add </button>
+ <br/>  <br/>
+  <!--  <pre>{{ resturants | json }}</pre>-->
+    <table >
+      <thead><tr>
+        <th style="text-align:left"> Name
+          </th><th style="text-align:left">City</th>
+        </tr>
+        </thead>
+    <tr *ngFor="let item of resturants;index as i;"> 
+      <td>{{item.name}}</td>
+      <td>{{item.city}}<td>
+      </tr>
+  </table>
+  <br/>
+Object being build 
+  <div>{{resturants|json}}</div>

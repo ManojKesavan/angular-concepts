@@ -1,0 +1,13 @@
+[{
+  "name":"MK",
+  "skillset":[{"primary":"HTML","secondary":"Scrum"}]
+},
+{
+  "name":"SK",
+  "skillset":[{"primary":"Angular","secondary":"Git"}]
+},
+{
+  "name":"GD",
+  "skillset":[{"primary":"Mongo","secondary":"CSS"}]
+}
+]
